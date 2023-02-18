@@ -1,0 +1,10 @@
+nav {
+  background-color: black;
+  color: white;
+  height: 85px;
+}
+
+.nav-heading {
+  font-size: 30px;
+  text-align: left;
+}
