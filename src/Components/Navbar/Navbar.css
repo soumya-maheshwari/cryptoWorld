@@ -2,9 +2,21 @@ nav {
   background-color: black;
   color: white;
   height: 85px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-heading {
   font-size: 30px;
   text-align: left;
+  margin-top: 10px;
+}
+.ss {
+  display: inline;
+  justify-content: right;
+  border: 2px solid whitesmoke;
+  display: flex;
+  right: auto;
+  margin-top: 18px;
+  margin-right: 80px;
 }

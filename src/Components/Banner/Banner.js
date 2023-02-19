@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Banner.css";
+// import Carousel from "./Carousel";
 function Banner() {
   return (
     <>
@@ -8,6 +9,7 @@ function Banner() {
         <p className="banner-para">
           Get all the Info regarding your favorite Crypto Currency
         </p>
+        {/* <Carousel /> */}
       </div>
     </>
   );
