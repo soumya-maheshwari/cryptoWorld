@@ -1,8 +1,8 @@
 .banner {
   background-color: rebeccapurple;
-  /* background-image: url("../../../public/assets/bckgrnd.jpg");
+  /* background-image: url("../../../public/assets/bckgrnd.jpg"); */
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   height: 700px;
 }
 
