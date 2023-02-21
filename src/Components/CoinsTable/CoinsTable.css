@@ -2,3 +2,16 @@
   background-color: black;
   color: white;
 }
+.search-box {
+  background-color: black;
+  color: white;
+}
+
+.search-box label {
+  color: white;
+  font-size: 30px;
+}
+
+.search-box:hover {
+  background-color: rgb(39, 38, 38);
+}

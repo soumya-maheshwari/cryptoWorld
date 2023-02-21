@@ -1,20 +1,41 @@
 import React from "react";
-
-const Coin = ({ name, image, symbol, price, volume }) => {
+import { Table, TableCell, TableRow } from "@mui/material";
+import styles from "./Coin.css";
+const Coin = ({ name, image, symbol, price, volume, priceChange }) => {
   return (
-    <div className="coin-container">
+    <Table>
       <div className="coin-row">
-        <div className="coin">
-          <img src={image} alt="crypto" />
-          <h1>{name}</h1>
-          <p className="coin-symbol">{symbol}</p>
-        </div>
-        <div className="coin-data">
-          <p className="coin-price">${price}</p>
-          <p className="coin-volume">${volume.toLocaleString()}</p>
-        </div>
+        <TableRow>
+          <TableCell>
+            <img src={image} className="imgg" alt="crypto" />
+          </TableCell>
+
+          <TableCell>
+            <h1 className="coin-name">{name} </h1>
+          </TableCell>
+
+          <TableCell>
+            <p className="coin-symbol">{symbol}</p>
+          </TableCell>
+
+          <TableCell>
+            <p className="coin-price">${price}</p>
+          </TableCell>
+
+          <TableCell>
+            <p className="coin-volume">${volume.toLocaleString()}</p>
+          </TableCell>
+
+          <TableCell className="price" style={{ alignContent: "right" }}>
+            {priceChange < 0 ? (
+              <p className="red">{priceChange.toFixed(2)}</p>
+            ) : (
+              <p className="green">{priceChange.toFixed(2)}</p>
+            )}
+          </TableCell>
+        </TableRow>
       </div>
-    </div>
+    </Table>
   );
 };
 
