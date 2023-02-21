@@ -12,7 +12,7 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" exact element={<HomePage />}></Route>
+          <Route path="/" element={<HomePage />}></Route>
           <Route path="/coins/:id" element={<CoinsPage />}></Route>
         </Routes>
       </BrowserRouter>
