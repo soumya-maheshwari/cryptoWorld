@@ -85,7 +85,7 @@ const CoinsTable = () => {
               </TableRow>
             </TableHead>
 
-            <TableBody>
+            {/* <TableBody>
               {handleSearch.map((row) => {
                 return (
                   <Coin
@@ -99,12 +99,12 @@ const CoinsTable = () => {
                   />
                 );
               })}
-            </TableBody>
+            </TableBody> */}
           </Table>
         )}
       </TableContainer>
 
-      {/* {handleSearch.map((row) => {
+      {handleSearch.map((row) => {
         return (
           <Coin
             key={row.id}
@@ -116,7 +116,7 @@ const CoinsTable = () => {
             priceChange={row.price_change_percentage_24h}
           />
         );
-      })} */}
+      })}
     </Container>
   );
 };
